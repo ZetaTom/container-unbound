@@ -30,7 +30,7 @@ chmod -R 644 /etc/unbound/{*.conf,custom}
 /opt/scripts/update_blocklists.sh -n
 
 if [ $# -eq 0 ]; then
-	supervisord -n -c /etc/supervisord.conf
+	exec supervisord -n -c /etc/supervisord.conf
 else
 	exec $@
 fi

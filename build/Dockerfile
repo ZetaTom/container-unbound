@@ -6,7 +6,8 @@ RUN apk add --no-cache \
         supervisor \
         openssl \
         ca-certificates \
-        unbound
+        unbound \
+        drill
 
 COPY overlay /
 
